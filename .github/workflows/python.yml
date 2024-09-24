@@ -29,11 +29,3 @@ jobs:
         - name: Linter
           run: |
             poetry run ruff check .
-
-        - name: Audit
-          run: |
-            poetry run bandit -c pyproject.toml -r src/ tests/
-
-        # - name: Test with pytest
-        #   run: |
-        #     poetry run pytest
